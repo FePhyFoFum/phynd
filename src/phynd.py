@@ -267,8 +267,8 @@ if __name__ == "__main__":
     parser.add_argument("-s", "--seqfile", help="sequence file",required=True)
     parser.add_argument("-w", "--sw", help="sliding window (e.g., length of segment)", type=int,required=True)
     parser.add_argument("-i", "--increment", help="increment (e.g., every i basepair)",type=int, required=True)
-    parser.add_argument("-p", "--plot", help="should we plot or just make the trees (default = True)",
-                        action="store_true", required=False, default=True)
+    parser.add_argument("-p", "--plot", help="should we plot or just make the trees (default = False)",
+                        action="store_true", required=False, default=False)
     parser.add_argument("-t","--threads",help="how many threads for iqtree?",required=False,type=int,default=2)
     if len(sys.argv[1:]) == 0:
         sys.argv.append("-h")

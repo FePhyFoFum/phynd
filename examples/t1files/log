@@ -4,8 +4,8 @@ Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
 
 Host:    Stephens-MacBook-Pro.local (AVX2, FMA3, 16 GB RAM)
 Command: iqtree -nt 2 -m GTR+G -s t1.fa -alrt 1000 -nm 10000 -bb 1000 -redo
-Seed:    408406 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Thu Apr  9 15:48:51 2020
+Seed:    815328 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Apr  9 18:20:37 2020
 Kernel:  AVX+FMA - 2 threads (16 CPU cores detected)
 
 Reading alignment file t1.fa ... Fasta format detected
@@ -40,8 +40,8 @@ Alignment has 25 sequences with 3000 columns, 2977 distinct patterns
   25  taxon_1     0.00%    passed     52.47%
 ****  TOTAL       0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
 
-Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.004 seconds
-Generating 1000 samples for ultrafast bootstrap (seed: 408406)...
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.003 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 815328)...
 
 NOTE: 21 MB RAM (0 GB) is required!
 Estimate model parameters (epsilon = 0.100)
@@ -53,41 +53,41 @@ Optimal log-likelihood: -61978.827
 Rate parameters:  A-C: 1.05120  A-G: 1.03019  A-T: 1.00863  C-G: 1.01793  C-T: 1.00427  G-T: 1.00000
 Base frequencies:  A: 0.253  C: 0.246  G: 0.245  T: 0.256
 Gamma shape alpha: 20.724
-Parameters optimization took 4 rounds (0.305 sec)
-Computing ML distances based on estimated model parameters... 0.024 sec
+Parameters optimization took 4 rounds (0.239 sec)
+Computing ML distances based on estimated model parameters... 0.014 sec
 Computing BIONJ tree...
 0.001 seconds
 Log-likelihood of BIONJ tree: -62030.558
 --------------------------------------------------------------------
 |             INITIALIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-Generating 98 parsimony trees... 0.523 second
-Computing log-likelihood of 98 initial trees ... 1.157 seconds
+Generating 98 parsimony trees... 0.470 second
+Computing log-likelihood of 98 initial trees ... 0.983 seconds
 Current best score: -61978.827
 
 Do NNI search on 20 best initial trees
 Estimate model parameters (epsilon = 0.100)
 BETTER TREE FOUND at iteration 1: -61978.826
-Iteration 10 / LogL: -61983.412 / Time: 0h:0m:3s
-Iteration 20 / LogL: -61979.475 / Time: 0h:0m:5s
+Iteration 10 / LogL: -61979.867 / Time: 0h:0m:2s
+Iteration 20 / LogL: -61989.346 / Time: 0h:0m:3s
 Finish initializing candidate tree set (1)
-Current best tree score: -61978.826 / CPU time: 4.688
+Current best tree score: -61978.826 / CPU time: 3.591
 Number of iterations: 20
 --------------------------------------------------------------------
 |               OPTIMIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-Iteration 30 / LogL: -62161.332 / Time: 0h:0m:6s (0h:0m:15s left)
-Iteration 40 / LogL: -61979.559 / Time: 0h:0m:7s (0h:0m:12s left)
-Iteration 50 / LogL: -61979.686 / Time: 0h:0m:8s (0h:0m:9s left)
-Log-likelihood cutoff on original alignment: -62025.219
-Iteration 60 / LogL: -61978.933 / Time: 0h:0m:10s (0h:0m:7s left)
-Iteration 70 / LogL: -61979.057 / Time: 0h:0m:11s (0h:0m:5s left)
-Iteration 80 / LogL: -61979.626 / Time: 0h:0m:12s (0h:0m:3s left)
-Iteration 90 / LogL: -61979.371 / Time: 0h:0m:13s (0h:0m:1s left)
-Iteration 100 / LogL: -61985.411 / Time: 0h:0m:14s (0h:0m:0s left)
-Log-likelihood cutoff on original alignment: -62022.560
+Iteration 30 / LogL: -61983.626 / Time: 0h:0m:4s (0h:0m:11s left)
+Iteration 40 / LogL: -61979.837 / Time: 0h:0m:5s (0h:0m:9s left)
+Iteration 50 / LogL: -61979.808 / Time: 0h:0m:6s (0h:0m:6s left)
+Log-likelihood cutoff on original alignment: -62017.876
+Iteration 60 / LogL: -61979.455 / Time: 0h:0m:7s (0h:0m:5s left)
+Iteration 70 / LogL: -61979.606 / Time: 0h:0m:8s (0h:0m:3s left)
+Iteration 80 / LogL: -61983.438 / Time: 0h:0m:9s (0h:0m:2s left)
+Iteration 90 / LogL: -61980.848 / Time: 0h:0m:10s (0h:0m:1s left)
+Iteration 100 / LogL: -61978.900 / Time: 0h:0m:11s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -62012.862
 NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
-TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:15s
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:11s
 
 --------------------------------------------------------------------
 |                    FINALIZING TREE SEARCH                        |
@@ -99,20 +99,20 @@ Optimal log-likelihood: -61978.826
 Rate parameters:  A-C: 1.05117  A-G: 1.03015  A-T: 1.00891  C-G: 1.01771  C-T: 1.00433  G-T: 1.00000
 Base frequencies:  A: 0.253  C: 0.246  G: 0.245  T: 0.256
 Gamma shape alpha: 20.724
-Parameters optimization took 1 rounds (0.039 sec)
+Parameters optimization took 1 rounds (0.027 sec)
 BEST SCORE FOUND : -61978.826
 
 Testing tree branches by SH-like aLRT with 1000 replicates...
-0.542 sec.
+0.434 sec.
 Creating bootstrap support values...
 Split supports printed to NEXUS file t1.fa.splits.nex
 Total tree length: 5.860
 
 Total number of iterations: 102
-CPU time used for tree search: 28.947 sec (0h:0m:28s)
-Wall-clock time used for tree search: 14.829 sec (0h:0m:14s)
-Total CPU time used: 31.082 sec (0h:0m:31s)
-Total wall-clock time used: 15.932 sec (0h:0m:15s)
+CPU time used for tree search: 22.655 sec (0h:0m:22s)
+Wall-clock time used for tree search: 11.507 sec (0h:0m:11s)
+Total CPU time used: 24.340 sec (0h:0m:24s)
+Total wall-clock time used: 12.365 sec (0h:0m:12s)
 
 Computing bootstrap consensus tree...
 Reading input file t1.fa.splits.nex...
@@ -131,4 +131,4 @@ Ultrafast bootstrap approximation results written to:
   Consensus tree:                t1.fa.contree
   Screen log file:               t1.fa.log
 
-Date and Time: Thu Apr  9 15:49:07 2020
+Date and Time: Thu Apr  9 18:20:50 2020

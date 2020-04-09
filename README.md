@@ -21,11 +21,22 @@ To get phynd, you can clone the repository with `git clone https://github.com/Fe
 
 You can run a basic analysis with the command
 
-`./src/phynd -s SEQFILE -w 1000 -i 1000 -t 2`
+`./src/phynd.py -s SEQFILE -w 1000 -i 1000 -t 2`
 and
-`./src/phynd -s SEQFILE -w 1000 -i 1000 -p -t 2`
+`./src/phynd.py -s SEQFILE -w 1000 -i 1000 -p -t 2`
 if you want to plot. 
 
 ## Examples
+
+In this example, there is a 3000 bp sequence with conflict in the last 1000 bp. We can run the example like 
+
+```
+cd examples/t1files
+../../src/phynd.py -s t1.fa -w 500 -i 500 -t 2 -p 
+```
+
+This will plot the results (`-p`) use 2 threads (`-t 2`) and includes a 500 sliding window and interval. 
+
+The results from this are below. You can see the conflict in the last 2 segments corresponding to the last 1000 bp. Each row in the plot corresponds to a clade. So all but one of the clades conflicts. Also, all of the segments conflict in one clade. In other words, the analysis has detected conflict. You can explore the clades in the gzip file that is output along with the data. In this case `t1.fa.interval_plotdata.details.gz`. This will show the specific conflicts (you may need to unzip it with `gunzip t1.fa.interval_plotdata.details.gz`).
 
 ![Example 1](examples/t1files/t1.fa.interval_plotdata.png "Example 1")
