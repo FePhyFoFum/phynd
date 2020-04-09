@@ -1,0 +1,134 @@
+IQ-TREE multicore version 1.6.12 for Mac OS X 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    Stephens-MacBook-Pro.local (AVX2, FMA3, 16 GB RAM)
+Command: iqtree -nt 2 -m GTR+G -s t1.fa -alrt 1000 -nm 10000 -bb 1000 -redo
+Seed:    408406 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Apr  9 15:48:51 2020
+Kernel:  AVX+FMA - 2 threads (16 CPU cores detected)
+
+Reading alignment file t1.fa ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 25 sequences with 3000 columns, 2977 distinct patterns
+2833 parsimony-informative, 155 singleton sites, 12 constant sites
+          Gap/Ambiguity  Composition  p-value
+   1  taxon_25    0.00%    passed      5.96%
+   2  taxon_24    0.00%    passed     91.05%
+   3  taxon_23    0.00%    passed     43.52%
+   4  taxon_22    0.00%    passed     85.14%
+   5  taxon_21    0.00%    passed     57.67%
+   6  taxon_20    0.00%    passed     81.63%
+   7  taxon_19    0.00%    passed     56.90%
+   8  taxon_18    0.00%    passed     85.16%
+   9  taxon_17    0.00%    passed     64.87%
+  10  taxon_16    0.00%    passed     18.37%
+  11  taxon_15    0.00%    passed     46.43%
+  12  taxon_14    0.00%    passed     88.34%
+  13  taxon_13    0.00%    passed     56.89%
+  14  taxon_12    0.00%    passed     73.43%
+  15  taxon_11    0.00%    passed     78.99%
+  16  taxon_10    0.00%    passed     96.27%
+  17  taxon_9     0.00%    passed     84.39%
+  18  taxon_8     0.00%    passed     76.30%
+  19  taxon_7     0.00%    passed     39.52%
+  20  taxon_6     0.00%    passed     71.38%
+  21  taxon_5     0.00%    passed     49.52%
+  22  taxon_4     0.00%    passed     46.78%
+  23  taxon_3     0.00%    passed     42.96%
+  24  taxon_2     0.00%    passed     96.67%
+  25  taxon_1     0.00%    passed     52.47%
+****  TOTAL       0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.004 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 408406)...
+
+NOTE: 21 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -63456.988
+2. Current log-likelihood: -62047.902
+3. Current log-likelihood: -61979.014
+4. Current log-likelihood: -61978.828
+Optimal log-likelihood: -61978.827
+Rate parameters:  A-C: 1.05120  A-G: 1.03019  A-T: 1.00863  C-G: 1.01793  C-T: 1.00427  G-T: 1.00000
+Base frequencies:  A: 0.253  C: 0.246  G: 0.245  T: 0.256
+Gamma shape alpha: 20.724
+Parameters optimization took 4 rounds (0.305 sec)
+Computing ML distances based on estimated model parameters... 0.024 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -62030.558
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.523 second
+Computing log-likelihood of 98 initial trees ... 1.157 seconds
+Current best score: -61978.827
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -61978.826
+Iteration 10 / LogL: -61983.412 / Time: 0h:0m:3s
+Iteration 20 / LogL: -61979.475 / Time: 0h:0m:5s
+Finish initializing candidate tree set (1)
+Current best tree score: -61978.826 / CPU time: 4.688
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -62161.332 / Time: 0h:0m:6s (0h:0m:15s left)
+Iteration 40 / LogL: -61979.559 / Time: 0h:0m:7s (0h:0m:12s left)
+Iteration 50 / LogL: -61979.686 / Time: 0h:0m:8s (0h:0m:9s left)
+Log-likelihood cutoff on original alignment: -62025.219
+Iteration 60 / LogL: -61978.933 / Time: 0h:0m:10s (0h:0m:7s left)
+Iteration 70 / LogL: -61979.057 / Time: 0h:0m:11s (0h:0m:5s left)
+Iteration 80 / LogL: -61979.626 / Time: 0h:0m:12s (0h:0m:3s left)
+Iteration 90 / LogL: -61979.371 / Time: 0h:0m:13s (0h:0m:1s left)
+Iteration 100 / LogL: -61985.411 / Time: 0h:0m:14s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -62022.560
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:15s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -61978.826
+Optimal log-likelihood: -61978.826
+Rate parameters:  A-C: 1.05117  A-G: 1.03015  A-T: 1.00891  C-G: 1.01771  C-T: 1.00433  G-T: 1.00000
+Base frequencies:  A: 0.253  C: 0.246  G: 0.245  T: 0.256
+Gamma shape alpha: 20.724
+Parameters optimization took 1 rounds (0.039 sec)
+BEST SCORE FOUND : -61978.826
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.542 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file t1.fa.splits.nex
+Total tree length: 5.860
+
+Total number of iterations: 102
+CPU time used for tree search: 28.947 sec (0h:0m:28s)
+Wall-clock time used for tree search: 14.829 sec (0h:0m:14s)
+Total CPU time used: 31.082 sec (0h:0m:31s)
+Total wall-clock time used: 15.932 sec (0h:0m:15s)
+
+Computing bootstrap consensus tree...
+Reading input file t1.fa.splits.nex...
+25 taxa and 53 splits.
+Consensus tree written to t1.fa.contree
+Reading input trees file t1.fa.contree
+Log-likelihood of consensus tree: -61978.826
+
+Analysis results written to: 
+  IQ-TREE report:                t1.fa.iqtree
+  Maximum-likelihood tree:       t1.fa.treefile
+  Likelihood distances:          t1.fa.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          t1.fa.splits.nex
+  Consensus tree:                t1.fa.contree
+  Screen log file:               t1.fa.log
+
+Date and Time: Thu Apr  9 15:49:07 2020
